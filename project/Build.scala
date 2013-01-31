@@ -8,7 +8,7 @@ object build extends Build {
   lazy val project = Project(
     id = "aprikot-plugin-api",
     base = file(".")
-  ).settings(StandardProject.newSettings :_*
+  ).settings(JavaProject.newSettings :_*
   ).settings(
     Seq(
       libraryDependencies ++= Seq(
